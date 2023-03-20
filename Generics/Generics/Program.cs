@@ -17,8 +17,6 @@ namespace Generics
             IsEqual = ClsCalculator.AreEqual<string>("ABC", "ABC");
             IsEqual = ClsCalculator.AreEqual<double>(10.5, 20.5);
 
-           
-
             Console.ReadKey();
 
         }
