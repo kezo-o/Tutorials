@@ -26,6 +26,26 @@ namespace Generics
             Console.WriteLine($"Test returns : {ClsCalculator.Test<double>(30)}");
 
 
+            var person = new Person() { Id = 1, Name = "John", Address = "Park Lane" };
+            var animal = new Animal() { Id = 1, Name = "Doggo", Address = "Home" };
+            var tree = new Tree() { Id = 1, Name = "Rose", Location = "Garden" };
+
+            //Implement and Test all the methods
+            //new Tree().Create();
+            //new Tree().Read();
+            //new Tree().Update();
+            //new Tree().Delete(); 
+
+            //new Person().Create();
+            //new Person().Read();
+            //new Person().Update();
+            //new Person().Delete();
+
+            //new Animal().Create();
+            //new Animal().Read();
+            //new Animal().Update();
+            //new Animal().Delete();
+
             Console.ReadKey();
 
         }
@@ -58,4 +78,8 @@ namespace Generics
             return (T)Convert.ChangeType(val, typeof(T));
         }
     }
+
+    //Exercise 2
+    //1.Create an interface for the 3 classes,Person,Tree and Animal for the CRUD methods
+    //2.Create an abstract class for the 3 classes,Person,Tree and Animal for the CRUD methods
 }
