@@ -31,10 +31,14 @@ namespace Generics
             var tree = new Tree() { Id = 1, Name = "Rose", Location = "Garden" };
 
             //Implement and Test all the methods
-            //new Tree().Create();
-            //new Tree().Read();
-            //new Tree().Update();
-            //new Tree().Delete(); 
+            new Tree().Create(1,"John","Park Lane");
+            new Tree().Create(2,"Smith","MayFair");
+            new Tree().Create(3,"Doe","Royal Garden");
+            new Tree().Read(2);
+            new Tree().Update(new Tree().Create(1, "Jane", "Royal Avenue"));
+            new Tree().Read(1);
+            new Tree().Delete(2);
+            // Use ToString and DisplayAll to output messages
 
             //new Person().Create();
             //new Person().Read();
